@@ -26,7 +26,25 @@
 		2750E7AF14CF1306007727A0 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */; };
 		27FC94E014D0C14E0000B18C /* InitialSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 27FC94DF14D0C14E0000B18C /* InitialSlidingViewController.m */; };
 		27FC94E314D105C60000B18C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FC94E214D105C60000B18C /* QuartzCore.framework */; };
+		DB1938D41774767A00922D94 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750E77214CDB0DF007727A0 /* Foundation.framework */; };
+		DB1938DF177476D900922D94 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27FC94E214D105C60000B18C /* QuartzCore.framework */; };
+		DB1938E0177476E000922D94 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750E77014CDB0DF007727A0 /* UIKit.framework */; };
+		DB1938E1177476E800922D94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750E77414CDB0DF007727A0 /* CoreGraphics.framework */; };
+		DB1938E21774771800922D94 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AB14CF1306007727A0 /* ECSlidingViewController.m */; };
+		DB1938E31774771C00922D94 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB1938D11774767A00922D94 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		27407EEB14D8787E0035FD7F /* iPad.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = iPad.storyboard; sourceTree = "<group>"; };
@@ -62,6 +80,7 @@
 		27FC94DE14D0C14E0000B18C /* InitialSlidingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InitialSlidingViewController.h; sourceTree = "<group>"; };
 		27FC94DF14D0C14E0000B18C /* InitialSlidingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InitialSlidingViewController.m; sourceTree = "<group>"; };
 		27FC94E214D105C60000B18C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		DB1938D31774767A00922D94 /* libECSlidingViewController.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libECSlidingViewController.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +92,17 @@
 				2750E77114CDB0DF007727A0 /* UIKit.framework in Frameworks */,
 				2750E77314CDB0DF007727A0 /* Foundation.framework in Frameworks */,
 				2750E77514CDB0DF007727A0 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1938D01774767A00922D94 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1938E1177476E800922D94 /* CoreGraphics.framework in Frameworks */,
+				DB1938E0177476E000922D94 /* UIKit.framework in Frameworks */,
+				DB1938DF177476D900922D94 /* QuartzCore.framework in Frameworks */,
+				DB1938D41774767A00922D94 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -92,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				2750E76C14CDB0DF007727A0 /* ECSlidingViewController.app */,
+				DB1938D31774767A00922D94 /* libECSlidingViewController.a */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -178,9 +209,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2750E76B14CDB0DF007727A0 /* ECSlidingViewController */ = {
+		2750E76B14CDB0DF007727A0 /* ECSlidingViewControllerDemo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */;
+			buildConfigurationList = 2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "ECSlidingViewControllerDemo" */;
 			buildPhases = (
 				2750E76814CDB0DF007727A0 /* Sources */,
 				2750E76914CDB0DF007727A0 /* Frameworks */,
@@ -190,10 +221,27 @@
 			);
 			dependencies = (
 			);
-			name = ECSlidingViewController;
+			name = ECSlidingViewControllerDemo;
 			productName = ECSlidingViewController;
 			productReference = 2750E76C14CDB0DF007727A0 /* ECSlidingViewController.app */;
 			productType = "com.apple.product-type.application";
+		};
+		DB1938D21774767A00922D94 /* ECSlidingViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB1938DC1774767A00922D94 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */;
+			buildPhases = (
+				DB1938CF1774767A00922D94 /* Sources */,
+				DB1938D01774767A00922D94 /* Frameworks */,
+				DB1938D11774767A00922D94 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ECSlidingViewController;
+			productName = ECSlidingViewController;
+			productReference = DB1938D31774767A00922D94 /* libECSlidingViewController.a */;
+			productType = "com.apple.product-type.library.static";
 		};
 /* End PBXNativeTarget section */
 
@@ -215,7 +263,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2750E76B14CDB0DF007727A0 /* ECSlidingViewController */,
+				2750E76B14CDB0DF007727A0 /* ECSlidingViewControllerDemo */,
+				DB1938D21774767A00922D94 /* ECSlidingViewController */,
 			);
 		};
 /* End PBXProject section */
@@ -250,6 +299,15 @@
 				27FC94E014D0C14E0000B18C /* InitialSlidingViewController.m in Sources */,
 				27498DCE14E96C75005C043E /* NavigationTopViewController.m in Sources */,
 				27498DD514E96EEF005C043E /* SampleTableViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DB1938CF1774767A00922D94 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB1938E21774771800922D94 /* ECSlidingViewController.m in Sources */,
+				DB1938E31774771C00922D94 /* UIImage+ImageWithUIView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -338,6 +396,49 @@
 			};
 			name = Release;
 		};
+		DB1938DD1774767A00922D94 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/ECSlidingViewController.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ECSlidingViewController/ECSlidingViewController-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		DB1938DE1774767A00922D94 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				DSTROOT = /tmp/ECSlidingViewController.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ECSlidingViewController/ECSlidingViewController-Prefix.pch";
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -350,7 +451,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */ = {
+		2750E78414CDB0DF007727A0 /* Build configuration list for PBXNativeTarget "ECSlidingViewControllerDemo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2750E78514CDB0DF007727A0 /* Debug */,
@@ -358,6 +459,14 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
+		};
+		DB1938DC1774767A00922D94 /* Build configuration list for PBXNativeTarget "ECSlidingViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB1938DD1774767A00922D94 /* Debug */,
+				DB1938DE1774767A00922D94 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
