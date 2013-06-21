@@ -32,6 +32,8 @@
 		DB1938E1177476E800922D94 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2750E77414CDB0DF007727A0 /* CoreGraphics.framework */; };
 		DB1938E21774771800922D94 /* ECSlidingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AB14CF1306007727A0 /* ECSlidingViewController.m */; };
 		DB1938E31774771C00922D94 /* UIImage+ImageWithUIView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2750E7AD14CF1306007727A0 /* UIImage+ImageWithUIView.m */; };
+		DB19390217747A0D00922D94 /* ECSlidingViewController.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 2750E7AA14CF1306007727A0 /* ECSlidingViewController.h */; };
+		DB19390317747A1100922D94 /* UIImage+ImageWithUIView.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 279E158D14D737F60028A9EE /* UIImage+ImageWithUIView.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,6 +43,8 @@
 			dstPath = "include/${PRODUCT_NAME}";
 			dstSubfolderSpec = 16;
 			files = (
+				DB19390217747A0D00922D94 /* ECSlidingViewController.h in CopyFiles */,
+				DB19390317747A1100922D94 /* UIImage+ImageWithUIView.h in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
