@@ -20,8 +20,6 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 @interface ECSlidingViewController()
 
 @property (nonatomic, strong) UIView *topViewSnapshot;
-@property (nonatomic, assign) CGFloat initialTouchPositionX;
-@property (nonatomic, assign) CGFloat initialHoizontalCenter;
 @property (nonatomic, strong) UIPanGestureRecognizer *panGesture;
 @property (nonatomic, strong) UITapGestureRecognizer *resetTapGesture;
 @property (nonatomic, strong) UIPanGestureRecognizer *topViewSnapshotPanGesture;
@@ -30,19 +28,12 @@ NSString *const ECSlidingViewTopDidReset             = @"ECSlidingViewTopDidRese
 @property (nonatomic, assign) BOOL topViewIsOffScreen;
 
 - (NSUInteger)autoResizeToFillScreen;
-- (UIView *)topView;
 - (UIView *)underLeftView;
 - (UIView *)underRightView;
 - (void)adjustLayout;
 - (void)updateTopViewHorizontalCenterWithRecognizer:(UIPanGestureRecognizer *)recognizer;
-- (void)updateTopViewHorizontalCenter:(CGFloat)newHorizontalCenter;
-- (void)topViewHorizontalCenterWillChange:(CGFloat)newHorizontalCenter;
-- (void)topViewHorizontalCenterDidChange:(CGFloat)newHorizontalCenter;
 - (void)addTopViewSnapshot;
 - (void)removeTopViewSnapshot;
-- (CGFloat)anchorRightTopViewCenter;
-- (CGFloat)anchorLeftTopViewCenter;
-- (CGFloat)resettedCenter;
 - (void)underLeftWillAppear;
 - (void)underRightWillAppear;
 - (void)topDidReset;

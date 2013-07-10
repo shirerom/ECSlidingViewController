@@ -216,6 +216,19 @@ typedef enum {
 /** Returns true if the top view is completely off the screen */
 - (BOOL)topViewIsOffScreen;
 
+#pragma mark - Jappy modifications
+
+@property (nonatomic, assign) CGFloat initialTouchPositionX;
+@property (nonatomic, assign) CGFloat initialHoizontalCenter;
+
+- (UIView *)topView;
+- (CGFloat)anchorRightTopViewCenter;
+- (CGFloat)anchorLeftTopViewCenter;
+- (CGFloat)resettedCenter;
+- (void)topViewHorizontalCenterWillChange:(CGFloat)newHorizontalCenter;
+- (void)topViewHorizontalCenterDidChange:(CGFloat)newHorizontalCenter;
+- (void)updateTopViewHorizontalCenter:(CGFloat)newHorizontalCenter;
+
 @end
 
 /** UIViewController extension */
